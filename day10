@@ -1,0 +1,110 @@
+#include <iostream>
+using namespace std;
+// Problem -- 1
+// making of 2d array
+
+int main() {
+    int arr[2][2]; 
+
+    // Correct way: Start at 0, end before 2
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cin >> arr[i][j];
+        }
+    }
+    cout << "Here is your 2d array" << "\n";
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cout << arr[i][j] << " ";
+        }
+        cout << "\n";
+}
+    return 0;
+}
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        for(int i =0; i< nums.size(); i++){
+        for(int j = i + 1; j < nums.size(); j++) {
+            if(nums[i] + nums[j] == target) {
+                return {i,j};
+            }
+        }
+        
+    }
+    return {};
+    }
+}
+#include <iostream>
+using namespace std;
+// Problem -- 1
+// making of 2d array
+
+int main() {
+    int arr[2][2]; 
+
+    // Correct way: Start at 0, end before 2
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cin >> arr[i][j];
+        }
+    }
+    cout << "Here is your 2d array" << "\n";
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cout << arr[i][j] << " ";
+        }
+        cout << "\n";
+}
+    return 0;
+}
+
+ #include <iostream>
+using namespace std;
+// Problem -- 2
+// Sum of elements oi 2d array
+
+int main() {
+    int arr[2][2]; 
+    int Sum = 0;
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cin >> arr[i][j];
+            Sum = Sum + arr[i][j];
+        }
+    }
+    cout << "Sum of these array are - :"  << Sum <<"\n";
+
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+// Problem -- 3
+// Search an element in a 2D matrix
+int main() {
+    int arr[2][2] = { {1, 2}, {3, 4} };
+    int searchElement;
+
+    cout << "Enter element to search: ";
+    cin >> searchElement;
+
+    bool found = false; // To track if we actually find it
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            if (arr[i][j] == searchElement) {
+                cout << "Element found at index: " << i << " " << j << endl;
+                found = true;
+            }
+        }
+    }
+
+    if (!found) {
+        cout << "Element not found in the matrix." << endl;
+    }
+
+    return 0;
+}
